@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link
+      rel="shortcut icon"
+      href="tic-tac-toe-favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="js/main.js"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body class="select-none grid justify-center items-center h-[100dvh]">
+    <div id="gameContainer" class="text-center">
+      <h1
+        class="text-5xl font-bold mb-12 absolute translate-x-[-50%] left-[50%] top-[12%] whitespace-nowrap outline-dotted px-4 py-2"
+      >
+        Tic Tac Toe
+      </h1>
+      <div id="cellContainer" class="grid grid-cols-3 w-[225px] my-5">
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
+      <h2 id="status" class="font-bold text-3xl my-4"></h2>
+      <button
+        id="restart"
+        class="bg-slate-950 text-white font-semibold text-xl w-[120px] py-2 duration-300 active:scale-95 mx-auto outline-none"
+      >
+        Restart
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('../tic-tac-toe-bg.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(8px);
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}

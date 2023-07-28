@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('../img/snake-bg.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(15px);
+}
+
+.active {
+  color: crimson;
+  font-weight: 800;
+}
+
+button {
+  outline: none;
+}

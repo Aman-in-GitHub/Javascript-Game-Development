@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}

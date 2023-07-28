@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link rel="shortcut icon" href="snake-favicon.png" type="image/x-icon" />
+    <script defer src="js/main.js"></script>
+    <title>Snake</title>
+  </head>
+  <body class="min-h-[100vh] bg-[#162004] select-none text-white">
+    <div class="text-center grid justify-center items-center">
+      <canvas
+        id="board"
+        class="mt-8 mx-10 md:mt-48 lg:mt-36"
+        width="325"
+        height="325"
+      ></canvas>
+      <div id="score" class="text-6xl font-semibold my-2">0</div>
+      <button
+        id="reset"
+        class="text-xl font-semibold bg-slate-950 text-white px-3 py-2 mt-2 w-[120px] duration-300 active:scale-95 mx-auto"
+      >
+        Reset
+      </button>
+    </div>
+    <div class="lg:hidden text-4xl font-black grid gap-5 mt-10">
+      <button
+        class="border h-12 w-12 direction mx-auto duration-150 active:scale-95"
+        data-direction="UP"
+      >
+        &#8593;
+      </button>
+      <div class="mx-auto grid grid-cols-3 gap-5">
+        <button
+          class="border h-12 w-12 direction duration-150 active:scale-95"
+          data-direction="LEFT"
+        >
+          &#8592;
+        </button>
+        <button
+          class="border h-12 w-12 direction mx-auto duration-200 active:scale-95"
+          data-direction="DOWN"
+        >
+          &#8595;
+        </button>
+        <button
+          class="border h-12 w-12 direction duration-150 active:scale-95"
+          data-direction="RIGHT"
+        >
+          &#8594;
+        </button>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 level-select justify-center mx-2 my-2">
+      <h5 class="text-3xl font-bold my-5">Level</h5>
+      <div class="grid grid-cols-3 gap-2 text-black">
+        <button
+          class="font-medium px-2 py-1 active level duration-300 active:scale-95 bg-white"
+          data-difficulty="easy"
+        >
+          Easy
+        </button>
+        <button
+          class="font-medium px-2 py-1 level duration-300 active:scale-95 bg-white"
+          data-difficulty="medium"
+        >
+          Medium
+        </button>
+        <button
+          class="font-medium px-2 py-1 level duration-300 active:scale-95 bg-white"
+          data-difficulty="hard"
+        >
+          Hard
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
